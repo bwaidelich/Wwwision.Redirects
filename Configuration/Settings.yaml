@@ -1,0 +1,13 @@
+---
+TYPO3:
+  Flow:
+    http:
+      chain:
+        process:
+          chain:
+            redirects:
+              # with this the redirect service is only invoked when no route matched
+              # by changing the position to "before routing" the redirect can be forced
+              # but this can have a negative impact on performance
+              position: 'after routing'
+              component: Wwwision\Redirects\RedirectComponent

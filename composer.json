@@ -1,0 +1,13 @@
+{
+    "name": "wwwision/redirects",
+    "type": "typo3-flow-package",
+    "description": "A Flow package to programmatically manage HTTP redirects",
+    "require": {
+        "typo3/flow": "~3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Wwwision\\Redirects": "Classes"
+        }
+    }
+}
